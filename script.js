@@ -1,5 +1,5 @@
 let score = 0;
-let time = 30;
+let time = 90;
 let gameRunning = false;
 
 const scoreText = document.getElementById("score");
@@ -18,7 +18,7 @@ target.addEventListener("click", catchTarget);
 function startGame() {
 
     score = 0;
-    time = 30;
+    time = 90;
 
     scoreText.textContent = score;
     timeText.textContent = time;
@@ -52,7 +52,7 @@ function catchTarget() {
         return;
     }
 
-    score++;
+    score+= 5;
 
     scoreText.textContent = score;
 
